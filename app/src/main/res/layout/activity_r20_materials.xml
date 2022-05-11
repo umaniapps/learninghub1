@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:alpha="1"
+    android:layout_height="match_parent"
+    tools:context=".R20_MATERIALS">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/bg_top_header"
+        android:alpha="0.9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/blue"/>
+
+
+    <ImageView
+        android:id="@+id/user_photo"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/idea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textSize="22sp"
+        android:text="DIFFERENT BRANCHES"
+        android:id="@+id/user_name"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/f1"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/user_photo"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="197dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/f1"
+        android:text="AR 20"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/user_photo"
+        app:layout_constraintTop_toTopOf="@id/user_name" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="60dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bg_top_header"
+        app:layout_constraintVertical_bias="0.211"
+        app:layout_editor_absoluteX="0dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/r20_ai_ml_materials"
+
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="#2CA6DD"
+            android:backgroundTint="#1BA0DB"
+            android:elevation="200dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            app:cardMaxElevation="120dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/b5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/play"
+                    android:text="AI ML"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:id="@+id/r20_cse_materials"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+
+            android:background="#2CA6DD"
+            android:backgroundTint="#1BA0DB"
+            android:elevation="200dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/b5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/play"
+                    android:text="CSE"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/r20_it_materials"
+
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="#2CA6DD"
+            android:backgroundTint="#1BA0DB"
+            android:elevation="200dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            app:cardMaxElevation="120dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/b5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/play"
+                    android:text="IT"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/r20_ece_materials"
+            android:background="#2CA6DD"
+            android:backgroundTint="#1BA0DB"
+            android:elevation="200dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/b5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/play"
+                    android:text="ECE"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/r20_eee_materials"
+
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="#2CA6DD"
+            android:backgroundTint="#1BA0DB"
+            android:elevation="200dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            app:cardMaxElevation="120dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/b5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/play"
+                    android:text="EEE"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:id="@+id/r20_mech_materials"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="#2CA6DD"
+            android:backgroundTint="#1BA0DB"
+            android:elevation="200dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/b5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/play"
+                    android:text="MECH"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/r20_civil_materials"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="#2CA6DD"
+            android:backgroundTint="#1BA0DB"
+            android:elevation="200dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/b5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/play"
+                    android:text="CIVIL"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/r20_agri_materials"
+            android:background="#2CA6DD"
+            android:backgroundTint="#1BA0DB"
+            android:elevation="200dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/b5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/play"
+                    android:text="AGRI"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:id="@+id/r20_mining_materials"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="#2CA6DD"
+            android:backgroundTint="#1BA0DB"
+            android:elevation="200dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/b5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/play"
+                    android:text="MINING"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:id="@+id/r20_petroleum_materials"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="#2CA6DD"
+            android:backgroundTint="#1BA0DB"
+            android:elevation="200dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="0dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/b5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/play"
+                    android:text="PETROLEUM"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

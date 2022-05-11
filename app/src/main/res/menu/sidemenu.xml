@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/home3"
+            android:title="Home"
+            android:icon="@drawable/home_1" />
+        <item
+            android:id="@+id/youtube1"
+            android:title="Best Youtube Videos"
+            android:icon="@drawable/youtube_2" />
+        <item
+            android:id="@+id/pdf1"
+            android:title="All Pdf Materials"
+            android:icon="@drawable/pdf" />
+        <item
+            android:id="@+id/roadmaps1"
+            android:title="RoadMaps"
+            android:icon="@drawable/track" />
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Others">
+
+            <menu>
+                <item
+                    android:id="@+id/moreapps1"
+                    android:title="More Apps"
+                    android:icon="@drawable/more" />
+                <item
+                    android:id="@+id/feedback1"
+                    android:title="Feedback"
+                    android:icon="@drawable/feedback1" />
+                <item
+                    android:id="@+id/settings1"
+                    android:title="Settings"
+                    android:icon="@drawable/settings1" />
+                <item
+                    android:id="@+id/about1"
+                    android:title="About"
+                    android:icon="@drawable/about1" />
+                <item
+                    android:id="@+id/exit1"
+                    android:title="Exit"
+                    android:icon="@drawable/exit1" />
+
+            </menu>
+        </item>
+
+    </group>
+</menu>

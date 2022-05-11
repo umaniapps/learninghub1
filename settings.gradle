@@ -1,0 +1,23 @@
+
+
+pluginManagement {
+    repositories {
+
+        maven { url "https://jitpack.io" }
+
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "ADITYA AUTONOMOUS PDF MATERIALS"
+include ':app'

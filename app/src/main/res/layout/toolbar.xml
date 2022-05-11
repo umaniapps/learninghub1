@@ -5,11 +5,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background_border"
     android:elevation="4dp"
-    app:title="Aditya Egineering"
+    app:title="Learning Hub"
     app:titleMarginStart="10dp"
     android:minHeight="?attr/actionBarSize"
 
-android:layout_marginTop="0.5dp"
+android:layout_marginTop="0.1dp"
     android:layout_marginLeft="2dp"
     android:layout_marginRight="2dp"
 

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintCircleRadius="50dp"
+    android:backgroundTint="#F9FBFB"
+    app:cardCornerRadius="10dp"
+    android:orientation="vertical"
+    android:layout_height="140dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@drawable/youtube_card_border"
+        android:layout_marginTop="0dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="TRENDING"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:textColor="#45484A"
+
+
+
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+   <!-- <jp.shts.android.library.TriangleLabelView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:backgroundColor="#03A9F4"
+        app:corner="leftTop"
+        app:labelBottomPadding="7dp"
+        app:labelCenterPadding="7dp"
+        app:labelTopPadding="10dp"
+        app:primaryText="Trending"
+        app:primaryTextColor="@color/white"
+        app:primaryTextSize="12sp"
+        />-->
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+
+            android:id="@+id/icon_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/html_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/icon_image"
+            android:layout_alignParentBottom="true"
+            android:background="#009688"
+
+            >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="5dp"
+                android:gravity="left|center"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
